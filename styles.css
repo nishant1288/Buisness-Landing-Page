@@ -1,0 +1,381 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+ 
+    padding: 1.25rem;
+}
+
+
+.nav .toggle-button{
+    display: none;  
+}
+
+.logo {
+  width: 20%;
+  text-align: center;
+  margin: auto 0;
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+    font-weight: 500;
+    margin: auto 0;
+}
+
+.nav ul li {
+    cursor: pointer;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav ul li a:hover {
+    color: grey;
+  
+}
+
+
+
+.nav .mid-items {
+    width: 40%;
+    justify-content: space-between;
+
+}
+
+.nav .connect-items {
+    width: 20%;
+    justify-content: space-around;
+    
+}
+
+.nav .connect-items button {
+    border-radius: 5px;
+    width: 5rem;
+    border: none;
+    height: 1.75rem;
+    font-weight: 500;
+}
+
+.nav .connect-items .signin-btn {
+    background-color: rgb(0, 183, 255);
+}
+
+.first-section  {
+    display: flex;
+    border: 1px solid white;
+    justify-content: space-around;
+    height: 80vh;
+}
+
+.first-section .first-icon {
+    width: 16%;
+    margin: auto 0;
+    
+}
+
+.first-section .first-icon img {
+    width: 70%;
+    animation: circular 5s infinite;
+}
+
+@keyframes circular {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+
+}
+
+.first-section .middle-title {
+    width: 46%;
+    text-align: center;
+    margin: auto 0;
+}
+
+.first-section .middle-title h2 {
+    font-size: 4.5rem;
+}
+.first-section .buisness-card {
+    width: 26%;
+    margin: auto 0;
+}
+
+.first-section .buisness-card .buisness-card-main {
+    background-color: black;
+    width: 80%;
+    color: white;
+    padding: 20px;
+    display: flex;
+   
+}
+
+.first-section .buisness-card .circle-logo{
+    width: 60%;
+    
+}
+
+.first-section .buisness-card .circle-logo img{
+    width: 100%;
+    box-shadow: 0 0 25px #fff;
+    border-radius: 10px;
+}
+
+.second-section {
+    width: 90%;
+    margin: auto;
+}
+
+.second-section h2 {
+    font-size: 3rem;
+    text-align: center;
+    background-color: rgb(41, 40, 40);
+    color: white;
+    padding: 5px;
+}
+
+#carouselExampleIndicators .carousel-control-prev{
+    border: 1px solid black;
+    width: 5%;
+    background-color: rgb(255, 246, 246);
+}
+
+
+#carouselExampleIndicators .carousel-control-next {
+    border: 1px solid black;
+    width: 5%;
+    background-color: rgb(255, 246, 246);
+}
+
+.fa-less-than, .fa-greater-than{
+    font-size: 2rem;
+    color: black;
+}
+
+.about-section {
+    width: 90%;
+    margin: auto;
+}
+
+.about-section h2 {
+    font-size: 3rem;
+    text-align: center;
+    background-color: rgb(41, 40, 40);
+    color: white;
+    padding: 5px;
+}
+
+.about-section .row {
+    display: flex;
+    justify-content: space-around;
+}
+
+.about-section .row  .col .card{
+    padding-top: 15px;
+}
+
+.about-section .row  .col .card img{
+    width: 80%;
+    margin: auto;
+    
+}
+
+.about-section .row  .col .card .card-body {
+    text-align: center;
+}
+
+.contact-signin{
+    width: 90%;
+    margin: auto;
+}
+
+.contact-signin h2{
+    font-size: 3rem;
+    text-align: center;
+    background-color: rgb(41, 40, 40);
+    color: white;
+    padding: 5px;
+}
+
+.footer {
+    background-color: black;
+    color: white;
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer .social-media-icons{
+   border: 1px solid white;
+   width: 40%;
+   margin: auto;
+   display: flex;
+   justify-content: space-around;
+   background-color: white;
+   border-radius: 10px;
+}
+
+.footer .social-media-icons i{
+    font-size: 2rem;
+    
+}
+
+.footer .social-media-icons .fa-linkedin {
+    color: blue;
+}
+
+.footer .social-media-icons .fa-instagram {
+    color: red;
+}
+
+.footer .social-media-icons .fa-whatsapp {
+    color:#25D366;
+}
+
+@media only screen and (max-width: 600px) 
+{
+
+    .logo {
+        width: 50%;
+    }
+    
+    .nav .mid-items {
+        display: none;
+        width: 100%;
+        height: 8rem;
+       
+    }
+
+    .nav .connect-items{
+        display: none;
+        width: 100%;
+        height: 5rem;
+    }
+
+    .nav {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .nav ul {
+        flex-direction: column;
+       
+    }
+
+    .nav .toggle-button{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 21px;
+        width: 30px;
+        right: 1rem;
+        top: 1.25rem;
+    }
+    
+    .nav .toggle-button .bar {
+        width: 100%;
+        height: 3px;
+        background-color: black; 
+    }
+
+    .nav .mid-items.active{
+        display: flex;
+    }
+
+    .nav .connect-items.active{
+        display: flex;
+    }
+
+    .first-section  {
+        display: flex;
+        flex-direction: column;
+        height: 60vh;
+      
+    }
+
+    .first-section .first-icon {
+        display: none;
+    }
+
+    .first-section .middle-title {
+        width: 90%;
+        text-align: center;
+        margin: auto;
+    }
+
+    .first-section .middle-title h2 {
+        font-size: 2rem;
+    }
+
+    .first-section .buisness-card {
+        width: 90%;
+        margin: auto;
+    }
+
+    .first-section .buisness-card .buisness-card-main {
+       margin: auto;
+    }
+
+    .second-section {
+        width: 95%;
+        margin: auto;
+    }
+    
+    .second-section h2 {
+        font-size: 1.5rem;
+        background-color: rgb(41, 40, 40);
+        color: white;
+        padding: 1px;
+    }
+
+    #carouselExampleIndicators .carousel-control-prev{
+        border: 1px solid white;
+    }
+    
+    
+    #carouselExampleIndicators .carousel-control-next {
+        border: 1px solid white;
+    }
+    
+    .fa-less-than, .fa-greater-than{
+        font-size: 1rem;
+        color: black;
+    }
+
+    .about-section .row  .col .card {
+        width: 80%;
+        margin: auto;
+    }
+
+    .about-section h2 {
+        font-size: 1.5rem;
+        background-color: rgb(41, 40, 40);
+        color: white;
+        padding: 1px;
+    }
+
+    .contact-signin h2 {
+        font-size: 1.5rem;
+        background-color: rgb(41, 40, 40);
+        color: white;
+        padding: 1px;
+    }
+
+    .footer .social-media-icons{
+        width: 100%;
+      
+     }
+}
